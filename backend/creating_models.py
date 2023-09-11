@@ -32,7 +32,7 @@ class TeamCreateRequest(BaseModel):
     description: str | None = None
 
 
-class HackInfoResponse(BaseModel):
+class HackCreateRequest(BaseModel):
     id: int = Field(..., example=1)
     name: str = Field(..., example="LCT 2023 Moscow ")
     website_link: str = Field(..., example="https://leaders2023.innoagency.ru/")
